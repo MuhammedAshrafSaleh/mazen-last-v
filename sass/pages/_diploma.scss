@@ -1,0 +1,93 @@
+.diploma {
+    width: 100%;
+    padding-top: 10rem;
+    .main__heading {
+        text-align: center;
+        @include responsive(phone) {
+            font-size: 8rem;
+        }
+    }
+
+    &__body {
+        padding-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        @include responsive(tab) { 
+            flex-direction: column !important;
+        }
+        @include responsive(phone) { 
+            padding-top: 5rem;
+        }
+
+    }
+    &__content {
+        width: 47%;
+        @include responsive(tab) { 
+            width: 90%;
+
+        }
+        @include responsive(phone) { 
+            width: 100%;
+        }
+    }
+    &__image {
+        width: 47%;
+        img {
+            max-width: 100%;
+        }
+        @include responsive(tab) { 
+            width: 90%;
+        }
+        @include responsive(phone) { 
+            width: 100%;
+        }
+    }
+
+    .secondary__head {
+        font-size: 4rem;
+        text-align: start;
+        margin: 1rem 0;
+        @include responsive(tabLand) {
+            font-size: 3rem;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    &__item {
+        font-size: 2rem;
+        margin: 1rem 0;
+        // color: #ccc;
+        color: rgba(30, 48, 86, 0.8);
+        font-weight: 700;
+        @media screen and (max-width: 1000px) {
+            font-size: 1.6rem;
+        }
+        @include responsive(tab) {
+            font-size: 2rem;
+        }
+    }
+    .head__number {
+        width: 8rem;
+        height: 8rem;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        font-size: 3.5rem;
+        border-radius: 5px;
+        margin-left: 1rem;
+    }
+    .head__number:nth-of-type(1){
+        background: var(--primary);
+    }
+    .head__number.blue {
+        background:var(--secondary);
+    }
+}

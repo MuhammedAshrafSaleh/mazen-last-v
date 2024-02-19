@@ -1,0 +1,71 @@
+.main__heading {
+  color: var(--white);
+  font-size: 10rem;
+  color: var(--primary);
+  text-align: center;
+  font-weight: bold;
+    /// White Theme
+    color: var(--secondary);
+    // text-shadow: 2px 2px #000;
+
+  @include responsive(tab) {
+    font-size: 6rem;
+  }
+
+  @include responsive(phone) {
+    font-size: 5rem;
+  }
+}
+
+.secondary__head {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-align: center;
+    /// White Theme
+    color: var(--black);
+}
+
+.head__text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray);
+  text-align: center;
+    /// White Theme
+    color: var(--black);
+}
+
+.main__text {
+  text-align: justify;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  word-spacing: 0;
+  /// White Theme
+  // color: var(--black);
+  color: rgba(30, 48, 86, 0.8);
+  font-weight: 700;
+
+  @include responsive(tabLand) {
+    font-size: 18px;
+  }
+  
+  @include responsive(tab) {
+    font-size: 16px;
+  }
+}
+
+
+
+.secondary__text {
+  text-align: justify;
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  // line-height: 40px;
+  word-spacing: 0;
+}

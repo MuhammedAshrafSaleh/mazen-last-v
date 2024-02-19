@@ -1,0 +1,44 @@
+
+.locations {
+    width: 100%;
+    padding: 10rem 0;
+    background-color: var(--black);
+    &__container {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        .locations__item {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 2rem 0;
+            .main__text {
+                font-weight: bold;
+                color: white;
+                font-size: 3.5rem;
+                margin: 2rem 0;
+            }
+            p {
+                text-align: center;
+            }
+            @include responsive(phone) {
+               width: 70%;
+            }
+        }
+        img {
+            width: 10rem;
+        }
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+    .main__heading {
+        color: var(--white);
+    }
+}
+
